@@ -24,6 +24,9 @@ jobs:
           dotnet-version: '6.0.x'  # Defina a versão .NET que está utilizando
       - run: echo "✅ Ambiente .NET Core foi configurado corretamente."
 
+      - name: List files for debugging
+        run: ls -R  # Adiciona esta linha para depuração
+
       - name: Restore dependencies
         run: dotnet restore ./Fiap.Api.Acidentes/Fiap.Api.Acidentes.sln # Restaura as dependências do projeto
       - run: echo "✅ Dependências restauradas com sucesso."
