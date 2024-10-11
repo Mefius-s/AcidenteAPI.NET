@@ -25,7 +25,7 @@ jobs:
       - run: echo "✅ Ambiente .NET Core foi configurado corretamente."
 
       - name: Restore dependencies
-        run: dotnet restore  # Restaura as dependências do projeto
+        run: dotnet restore Fiap.Api.Acidentes.csproj # Restaura as dependências do projeto
       - run: echo "✅ Dependências restauradas com sucesso."
 
       - name: Build the project
