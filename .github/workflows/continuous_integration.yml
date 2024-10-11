@@ -28,11 +28,11 @@ jobs:
         run: ls -R  # Adiciona esta linha para depuração
 
       - name: Restore dependencies
-        run: dotnet restore ./Fiap.Api.Acidentes.sln # Restaura as dependências do projeto
+        run: dotnet restore ./Fiap.Api.Acidentes/Fiap.Api.Acidentes.sln # Restaura as dependências do projeto
       - run: echo "✅ Dependências restauradas com sucesso."
 
       - name: Build the project
-        run: dotnet build ./Fiap.Api.Acidentes.sln --configuration Release --no-restore  # Compila o projeto
+        run: dotnet build ./Fiap.Api.Acidentes/Fiap.Api.Acidentes.sln --configuration Release --no-restore  # Compila o projeto
       - run: echo "✅ Build do projeto foi concluída com sucesso."
 
       - name: Run unit tests
