@@ -33,5 +33,5 @@ jobs:
       - run: echo "✅ Build do projeto foi concluída com sucesso."
 
       - name: Run unit tests
-        run: dotnet test --no-build --verbosity normal  # Executa os testes unitários
+        run: dotnet test ./Fiap.Api.Acidentes.Test/Fiap.Api.Acidentes.Test.csproj --no-build --verbosity normal  # Executa os testes unitários
       - run: echo "✅ Testes unitários executados com sucesso."
