@@ -21,11 +21,8 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '6.0.x'  # Defina a versão .NET que está utilizando
+          dotnet-version: '8.0.x'  # Defina a versão .NET que está utilizando
       - run: echo "✅ Ambiente .NET Core foi configurado corretamente."
-
-      - name: List files for debugging
-        run: ls -R  # Adiciona esta linha para depuração
 
       - name: Restore dependencies
         run: dotnet restore ./Fiap.Api.Acidentes/Fiap.Api.Acidentes.sln # Restaura as dependências do projeto
@@ -36,5 +33,5 @@ jobs:
       - run: echo "✅ Build do projeto foi concluída com sucesso."
 
       - name: Run unit tests
-        run: dotnet test --no-build --verbosity normal  # Executa os testes unitários
+        run: dotnet test ./Fiap.Api.Acidentes.Test/Fiap.Api.Acidentes.Test.csproj --no-build --verbosity normal  # Executa os testes unitários
       - run: echo "✅ Testes unitários executados com sucesso."
