@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desenvolvimento - Matheus\\Fiap - Acidentes  Fase 4 .NET\\fase 4 - net\\Fiap.Api.Acidentes\\Fiap.Api.Acidentes.csproj": {}
+    "C:\\Users\\mcaro\\OneDrive\\Área de Trabalho\\api.net\\fase 4 - net\\Fiap.Api.Acidentes\\Fiap.Api.Acidentes.csproj": {}
   },
   "projects": {
-    "D:\\Desenvolvimento - Matheus\\Fiap - Acidentes  Fase 4 .NET\\fase 4 - net\\Fiap.Api.Acidentes\\Fiap.Api.Acidentes.csproj": {
+    "C:\\Users\\mcaro\\OneDrive\\Área de Trabalho\\api.net\\fase 4 - net\\Fiap.Api.Acidentes\\Fiap.Api.Acidentes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desenvolvimento - Matheus\\Fiap - Acidentes  Fase 4 .NET\\fase 4 - net\\Fiap.Api.Acidentes\\Fiap.Api.Acidentes.csproj",
+        "projectUniqueName": "C:\\Users\\mcaro\\OneDrive\\Área de Trabalho\\api.net\\fase 4 - net\\Fiap.Api.Acidentes\\Fiap.Api.Acidentes.csproj",
         "projectName": "Fiap.Api.Acidentes",
-        "projectPath": "D:\\Desenvolvimento - Matheus\\Fiap - Acidentes  Fase 4 .NET\\fase 4 - net\\Fiap.Api.Acidentes\\Fiap.Api.Acidentes.csproj",
+        "projectPath": "C:\\Users\\mcaro\\OneDrive\\Área de Trabalho\\api.net\\fase 4 - net\\Fiap.Api.Acidentes\\Fiap.Api.Acidentes.csproj",
         "packagesPath": "C:\\Users\\mcaro\\.nuget\\packages\\",
-        "outputPath": "D:\\Desenvolvimento - Matheus\\Fiap - Acidentes  Fase 4 .NET\\fase 4 - net\\Fiap.Api.Acidentes\\obj\\",
+        "outputPath": "C:\\Users\\mcaro\\OneDrive\\Área de Trabalho\\api.net\\fase 4 - net\\Fiap.Api.Acidentes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mcaro\\AppData\\Roaming\\NuGet\\NuGet.Config",

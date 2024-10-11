@@ -16,6 +16,6 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Fiap.Api.Acidentes.Test
-build_property.ProjectDir = D:\Desenvolvimento - Matheus\Fiap - Acidentes  Fase 4 .NET\fase 4 - net\Fiap.Api.Acidentes.Test\
+build_property.ProjectDir = C:\Users\mcaro\OneDrive\Área de Trabalho\api.net\fase 4 - net\Fiap.Api.Acidentes.Test\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
