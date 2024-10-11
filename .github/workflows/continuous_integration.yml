@@ -15,13 +15,13 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - run: echo "✅ Código foi verificado com sucesso."
 
       - name: Set up .NET Core
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.x'  # Defina a versão .NET que está utilizando
+          dotnet-version: '6.0.x'  # Defina a versão .NET que está utilizando
       - run: echo "✅ Ambiente .NET Core foi configurado corretamente."
 
       - name: Restore dependencies
@@ -29,7 +29,7 @@ jobs:
       - run: echo "✅ Dependências restauradas com sucesso."
 
       - name: Build the project
-        run: dotnet build --configuration Release --no-restore  # Compila o projeto
+        run: dotnet build Fiap.Api.Acidentes.csproj --configuration Release --no-restore  # Compila o projeto
       - run: echo "✅ Build do projeto foi concluída com sucesso."
 
       - name: Run unit tests
