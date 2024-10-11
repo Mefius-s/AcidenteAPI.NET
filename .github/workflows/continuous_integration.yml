@@ -1,0 +1,37 @@
+name: CI for .NET with Pull Request
+
+# Aciona o workflow somente quando houver um pull request da branch feature para a branch master
+on:
+  pull_request:
+    branches:
+      - master  # A branch de destino deve ser master
+    paths:
+      - '**'  # Monitora mudanças em todos os arquivos
+    types: [opened, synchronize, reopened]  # Gatilhos para PR
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest  # Define o sistema operacional da máquina de execução
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - run: echo "✅ Código foi verificado com sucesso."
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.x'  # Defina a versão .NET que está utilizando
+      - run: echo "✅ Ambiente .NET Core foi configurado corretamente."
+
+      - name: Restore dependencies
+        run: dotnet restore  # Restaura as dependências do projeto
+      - run: echo "✅ Dependências restauradas com sucesso."
+
+      - name: Build the project
+        run: dotnet build --configuration Release --no-restore  # Compila o projeto
+      - run: echo "✅ Build do projeto foi concluída com sucesso."
+
+      - name: Run unit tests
+        run: dotnet test --no-build --verbosity normal  # Executa os testes unitários
+      - run: echo "✅ Testes unitários executados com sucesso."
