@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fiap.Api.Acidentes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc5187c17a50acdf3a3b1d58a6b301c92313933d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f887a68489e1a913527243e0d02578dbe709a14")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fiap.Api.Acidentes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fiap.Api.Acidentes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
