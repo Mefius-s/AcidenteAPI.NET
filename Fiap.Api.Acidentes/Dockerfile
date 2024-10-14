@@ -13,7 +13,6 @@ WORKDIR /src
 COPY Fiap.Api.Acidentes.csproj ./
 RUN dotnet restore "Fiap.Api.Acidentes.csproj"
 
-# Copy the entire source code and build the app
 COPY . .
 WORKDIR "/src"
 RUN dotnet build "Fiap.Api.Acidentes.csproj" -c $BUILD_CONFIGURATION -o /app/build

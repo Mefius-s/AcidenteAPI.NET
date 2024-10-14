@@ -5,11 +5,13 @@ services:
     environment:
       ORACLE_ALLOW_REMOTE: 'true'
       ORACLE_DISABLE_ASYNCH_IO: 'true'
+
       ORACLE_PASSWORD: fiap24
     ports:
       - "1521:1521"
     healthcheck:
       test: ["CMD", "bash", "-c", "echo 'SELECT 1 FROM dual;' | sqlplus -s SYSTEM/fiap24@//localhost:1521/XE"]
+
       interval: 10s
       retries: 10
 
@@ -20,6 +22,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__DatabaseConnection=Data Source=oracle:1521/XE;User ID=SYSTEM;Password=${ORACLE_PASSWORD};
+
     depends_on:
       db:
         condition: service_healthy
