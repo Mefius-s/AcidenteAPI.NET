@@ -29,5 +29,5 @@ WORKDIR /app
 # Copy the published app from the build container to the runtime container
 COPY --from=publish /app/publish .
 
-# Define the entry point for the container
+# Define the entry point for the container, using the PROFILE environment variable for ASPNETCORE_ENVIRONMENT
 ENTRYPOINT ["dotnet", "Fiap.Api.Acidentes.dll"]

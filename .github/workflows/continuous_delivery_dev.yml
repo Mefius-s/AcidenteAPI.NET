@@ -6,8 +6,8 @@ on:
       - "development/*"
 
 env:
-  IMAGE_NAME: fiap-api-acidentes
-  AZURE_WEBAPP_NAME: fiap-api-dev
+  IMAGE_NAME: acidentes-api-dotnet
+  AZURE_WEBAPP_NAME: fiap-acidentes-dotnet-dev
   DOCKER_TAG: latest
 
 jobs:
@@ -43,5 +43,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          publish-profile: ${{ secrets.AZURE_PROFILE }}
           images: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.DOCKER_TAG }}
