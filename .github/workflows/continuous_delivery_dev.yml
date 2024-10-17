@@ -3,7 +3,7 @@ name: CI/CD for Development
 on:
   push:
     branches:
-      - "development/*"
+      - "development"
 
 env:
   IMAGE_NAME: acidentes-api-dotnet
