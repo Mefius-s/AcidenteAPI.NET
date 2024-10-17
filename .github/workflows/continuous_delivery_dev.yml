@@ -33,10 +33,10 @@ jobs:
 
       - name: Build and push Docker images with Docker Compose
         env:
-          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }} # Pass environment variable
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
         run: |
-          docker-compose -f ./Fiap.Api.Acidentes/compose.yaml build api
-          docker-compose -f ./Fiap.Api.Acidentes/compose.yaml push api
+          docker-compose -f ./compose.yaml build api  # Adjust path to point to the correct compose file location
+          docker-compose -f ./compose.yaml push api
 
   deploy:
     runs-on: ubuntu-latest
