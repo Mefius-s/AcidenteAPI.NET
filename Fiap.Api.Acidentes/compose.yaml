@@ -17,7 +17,7 @@ services:
     build:
       context: .
       dockerfile: ./Fiap.Api.Acidentes/Dockerfile
-    image: ${{ secrets.DOCKERHUB_USERNAME }}/acidentes-api-dotnet:latest
+    image: "${DOCKERHUB_USERNAME}/acidentes-api-dotnet:latest"  # Changed to Docker Compose format
     ports:
       - "8080:8080"
     depends_on:
