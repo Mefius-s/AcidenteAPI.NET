@@ -33,9 +33,9 @@ jobs:
 
       - name: Build and push Docker images with Docker Compose
         env:
-          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }} # Pass environment variable
         run: |
-          docker-compose -f ./Fiap.Api.Acidentes/compose.yaml build api  # If compose.yaml is inside Fiap.Api.Acidentes
+          docker-compose -f ./Fiap.Api.Acidentes/compose.yaml build api
           docker-compose -f ./Fiap.Api.Acidentes/compose.yaml push api
 
   deploy:

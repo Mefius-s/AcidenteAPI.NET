@@ -15,7 +15,7 @@ services:
 
   api:
     build:
-      context: ./Fiap.Api.Acidentes  # Correct this to point to the actual project directory
+      context: .  # Correct this to point to the actual project directory
       dockerfile: Dockerfile          # Ensure the Dockerfile path is correct relative to the context
     image: "${DOCKERHUB_USERNAME}/acidentes-api-dotnet:latest"
     ports:
