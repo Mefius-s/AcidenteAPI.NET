@@ -24,7 +24,7 @@ Este é um projeto em .NET que implementa uma API para gerenciar informações s
 ### Pré-requisitos
 
 - [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
-- Banco de dados configurado (Exemplo: Oracle SQL Developer ou outro banco de sua escolha).
+- Banco de dados configurado (Exemplo: Oracle SQL Developer).
 - Ferramenta de linha de comando Git.
 
 ### Passos
