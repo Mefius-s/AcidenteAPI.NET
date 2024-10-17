@@ -17,7 +17,7 @@ services:
     build:
       context: .  # Correct this to point to the actual project directory
       dockerfile: Dockerfile          # Ensure the Dockerfile path is correct relative to the context
-    image: "${DOCKERHUB_USERNAME}/acidentes-api-dotnet:latest"
+    image: "nicholasbeebyfiap/acidentes-api-dotnet:latest"
     ports:
       - "8080:8080"
     depends_on:
