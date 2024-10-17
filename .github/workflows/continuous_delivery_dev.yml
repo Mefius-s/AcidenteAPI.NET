@@ -35,8 +35,8 @@ jobs:
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
         run: |
-          docker-compose -f ./compose.yaml build api  # Adjust path to point to the correct compose file location
-          docker-compose -f ./compose.yaml push api
+          docker-compose -f ./Fiap.Api.Acidentes/compose.yaml build api  # If compose.yaml is inside Fiap.Api.Acidentes
+          docker-compose -f ./Fiap.Api.Acidentes/compose.yaml push api
 
   deploy:
     runs-on: ubuntu-latest
